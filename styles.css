@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #1e90ff;
+  --primary-color: #e76f51;
   --secondary-color: #ffffff;
   --dark-color: #161616;
   --bright-color: #e7e7e7;
@@ -9,6 +9,7 @@ html {
   font-family: Helvetica;
   font-weight: lighter;
   box-sizing: border-box;
+  line-height: 0;
 }
 
 a {
@@ -17,6 +18,32 @@ a {
 
 .link {
   text-decoration: none;
+  line-height: 0;
+}
+
+.link:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.link--header {
+  padding: 40px 25px;
+  display: inline-block;
+}
+
+.link--logo {
+  display: block;
+  float: left;
+  padding: 18px 25px;
+  box-sizing: border-box;
+}
+
+.link--item {
+  width: 100%;
+}
+
+.link--name {
+  padding: 40px 60px;
 }
 
 header {
@@ -25,7 +52,7 @@ header {
   top: 0;
   left: 0;
   display: flex;
-  height: 85px;
+  height: 80px;
   width: 100%;
   background-color: white;
   border-bottom: 1px solid var(--dark-color);
@@ -37,14 +64,13 @@ header {
 }
 
 .header__aside h1 {
+  line-height: 0;
   font-size: 60px;
-  line-height: 60px;
   letter-spacing: -3.5px;
 }
 
 .header__nav {
   font-size: 25px;
-  line-height: 25px;
   letter-spacing: -0.5px;
   flex-grow: 1;
 }
@@ -53,7 +79,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 85px;
+  height: 80px;
 }
 
 .button-menu {
@@ -112,7 +138,7 @@ header {
     width: 100%;
     right: 0;
     bottom: 0;
-    top: 85px;
+    top: 80px;
     background: white;
   }
 
@@ -130,7 +156,7 @@ header {
     display: flex;
     flex-grow: 1;
     text-align: center;
-    height: 85px;
+    height: 80px;
     position: relative;
   }
 }
@@ -145,23 +171,6 @@ header {
 
 .nav__list-item--logo {
   max-width: 100px;
-}
-
-.link--header {
-  padding: 16px 25px;
-  display: inline-block;
-  width: 100%;
-}
-
-.link--logo {
-  display: block;
-  float: left;
-  padding: 25px;
-  box-sizing: border-box;
-}
-
-.link--name {
-  padding: 16px 55px;
 }
 
 .brand-logo {
