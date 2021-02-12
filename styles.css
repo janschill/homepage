@@ -1,0 +1,171 @@
+:root {
+  --primary-color: #1e90ff;
+  --secondary-color: #ffffff;
+  --dark-color: #161616;
+  --bright-color: #e7e7e7;
+}
+
+html {
+  font-family: Helvetica;
+  font-weight: lighter;
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--dark-color);
+}
+
+.link {
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  display: flex;
+  height: 85px;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid var(--dark-color);
+}
+
+.header__aside {
+  display: block;
+  border-right: 1px solid var(--dark-color);
+}
+
+.header__aside h1 {
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: -3.5px;
+}
+
+.header__nav {
+  font-size: 25px;
+  line-height: 25px;
+  letter-spacing: -0.5px;
+  flex-grow: 1;
+}
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85px;
+}
+
+.button-menu {
+  background-color: white;
+  border: none;
+  margin: 0;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  appearance: none;
+  display: flex;
+  align-items: center;
+  font-weight: lighter;
+  font-family: inherit;
+}
+
+.burger {
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 10px;
+  margin-right: 10px;
+}
+
+.burger-inner, .burger-inner::after, .burger-inner::before {
+  position: absolute;
+  width: 25px;
+  height: 1px;
+  left: 0;
+  background-color: var(--dark-color);
+}
+
+.burger-inner {
+  top: 0px;
+}
+
+.burger-inner::after {
+  content: '';
+  top: 10px;
+}
+
+.burger-inner::before {
+  content: '';
+  top: 5px;
+}
+
+.nav__list {
+  display: none;
+}
+
+@media all and (max-width: 1300px) {
+  .nav__list--active {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    top: 85px;
+    background: white;
+  }
+
+  .nav__list--active .nav__list-item {
+    border: none;
+  }
+}
+
+@media all and (min-width: 1300px) {
+  .nav__menu {
+    display: none;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-grow: 1;
+    text-align: center;
+    height: 85px;
+    position: relative;
+  }
+}
+
+.nav__list-item {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid var(--dark-color);
+}
+
+.nav__list-item--logo {
+  max-width: 100px;
+}
+
+.link--header {
+  padding: 16px 25px;
+  display: inline-block;
+  width: 100%;
+}
+
+.link--logo {
+  display: block;
+  float: left;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+.link--name {
+  padding: 16px 55px;
+}
+
+.brand-logo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
