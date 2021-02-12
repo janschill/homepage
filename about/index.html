@@ -5,21 +5,46 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../reset.css">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../burger.js"></script>
   <title>jan schill</title>
 </head>
 
 <body>
   <header>
-    <nav>
-      <ul>
-        <li>
-          <h1><a href="/">jan schill</a></h1>
+    <aside class="header__aside">
+      <h1><a class="link link--header link--name" href="/">jan schill</a></h1>
+    </aside>
+    <nav class="header__nav">
+      <aside class="nav__menu">
+        <button class="button-menu">
+          <span class="burger"><span class="burger-inner"></span></span>
+          <span>menu</span>
+        </button>
+      </aside>
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <a class="link link--item link--header" href="/about">about</a>
         </li>
-        <li>
-          <a href="/about">about</a>
+        <li class="nav__list-item">
+          <a class="link link--item link--header" href="/thoughts">thoughts</a>
         </li>
-        <li>
-          <a href="/experiments">experiments</a>
+        <li class="nav__list-item">
+          <a class="link link--item link--header" href="/experiments">experiments</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--item link--header" href="/readings">readings</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--item link--header" href="/people">people</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--item link--header" href="/links">links</a>
+        </li>
+        <li class="nav__list-item nav__list-item--logo">
+          <a class="link link--item link--header link--logo" href="https://janschill.net/profile/card#me"><img
+              class="brand-logo" src="../solid.svg" alt="The Solid Project logo."></a>
         </li>
       </ul>
     </nav>
