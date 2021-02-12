@@ -6,6 +6,7 @@
 }
 
 html {
+  font-size: 16px;
   font-family: Helvetica;
   font-weight: lighter;
   box-sizing: border-box;
@@ -60,8 +61,16 @@ p + p {
 section {
   display: inline-block;
   border: 1px solid var(--dark-color);
-  padding: 20px 30px;
+  padding: 20px 10px;
 }
+
+
+@media all and (min-width: 800px) {
+  section {
+    padding: 20px 30px;
+  }
+}
+
 
 article {
   max-width: 600px;
@@ -110,7 +119,15 @@ button:hover {
 }
 
 .link--name {
-  padding: 40px 60px;
+  padding: 40px 30px;
+  font-size: 2.75rem;
+}
+
+@media all and (min-width: 600px) {
+  .link--name {
+    padding: 40px 60px;
+    font-size: 3.75rem;
+  }
 }
 
 header {
@@ -132,7 +149,7 @@ header {
 
 .header__aside h1 {
   line-height: 0;
-  font-size: 60px;
+  font-size: 3.75rem;
   letter-spacing: -3.5px;
 }
 
@@ -248,7 +265,7 @@ header {
 
 main {
   margin: 85px 0;
-  padding: 20px 15px;
+  padding: 20px 5px;
 }
 
 @media all and (min-width: 800px) {
