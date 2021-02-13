@@ -58,6 +58,10 @@ li + li {
   margin-top: 5px;
 }
 
+.nav__list-item + .nav__list-item {
+  margin-top: 0;
+}
+
 p + p {
   margin-top: 10px;
 }
