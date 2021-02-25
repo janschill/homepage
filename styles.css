@@ -80,11 +80,11 @@ section {
 }
 
 
-article {
+.text {
   max-width: 600px;
 }
 
-article + article {
+.text + .text {
   margin-top: 20px;
 }
 
@@ -98,6 +98,14 @@ a:hover {
 
 button:hover {
   color: var(--primary-color);
+}
+
+.centered {
+  text-align: center;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .link {
@@ -118,7 +126,7 @@ button:hover {
 .link--logo {
   display: block;
   float: left;
-  padding: 18px 25px;
+  padding: 17px 25px;
   box-sizing: border-box;
 }
 
