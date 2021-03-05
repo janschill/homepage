@@ -54,7 +54,7 @@ p {
   }
 }
 
-li + li {
+.li + .li {
   margin-top: 5px;
 }
 
@@ -66,7 +66,7 @@ p + p {
   margin-top: 10px;
 }
 
-section {
+.section {
   display: inline-block;
   border: 1px solid var(--dark-color);
   padding: 20px 10px;
@@ -75,7 +75,7 @@ section {
 
 
 @media all and (min-width: 800px) {
-  section {
+  .section {
     padding: 20px 30px;
   }
 }
@@ -152,7 +152,7 @@ button:hover {
   }
 }
 
-header {
+.header {
   position: fixed;
   z-index: 9999;
   top: 0;
@@ -286,19 +286,19 @@ header {
   height: auto;
 }
 
-main {
+.main {
   margin: 85px 0;
   padding: 20px 5px;
 }
 
 @media all and (min-width: 800px) {
-  main {
+  .main {
     margin: 100px 25px;
     padding: 20px 30px;
   }
 }
 
-footer {
+.footer {
   background-color: white;
   position: fixed;
   bottom: 0;
@@ -306,4 +306,15 @@ footer {
   right: 0;
   padding: 15px 55px;
   border-top: 1px solid var(--dark-color);
+}
+
+.njonas {
+  font-size: 12px;
+  padding: 5px;
+  border: 1px solid gray;
+}
+
+.njonas__list {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
 }
