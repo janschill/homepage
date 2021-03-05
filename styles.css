@@ -70,6 +70,7 @@ section {
   display: inline-block;
   border: 1px solid var(--dark-color);
   padding: 20px 10px;
+  margin: 5px;
 }
 
 
@@ -98,6 +99,11 @@ a:hover {
 
 button:hover {
   color: var(--primary-color);
+}
+
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .centered {
