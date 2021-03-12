@@ -67,6 +67,7 @@ p {
   margin-right: 0;
   padding-left: 40px;
   font-size: 1rem;
+  line-height: 1.25;
 }
 
 @media all and (min-width: 600px){
@@ -125,6 +126,10 @@ button:hover {
 
 .centered {
   text-align: center;
+}
+
+.centered > section {
+  text-align: left;
 }
 
 .italic {
