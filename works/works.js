@@ -11,7 +11,7 @@
       const $li = document.createElement('li')
       $li.classList.add('artist-list-item')
       $li.style.display = 'inline-block'
-      const $artistImg = `<img class="artist-cover" src="${artist.photo}"/><span class="artist-cover-after"></span>`
+      const $artistImg = `<img class="artist-cover" src="${artist.photo}" alt="Spotify cover photo of ${artist.name}."/><span class="artist-cover-after"></span>`
       const $artistName = `<h4 class="artist-name">${artist.name}</h4>`
       $li.innerHTML = $artistImg + $artistName
       document.querySelector('.artist-list').append($li)

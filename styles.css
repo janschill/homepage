@@ -317,6 +317,12 @@ button:hover {
 @media all and (min-width: 800px) {
   .main {
     margin: 100px 25px;
+    padding: 20px 10px;
+  }
+}
+
+@media all and (min-width: 1400px) {
+  .main {
     padding: 20px 30px;
   }
 }
