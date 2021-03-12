@@ -122,6 +122,7 @@ button:hover {
 .flex-grid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .centered {
@@ -258,7 +259,7 @@ button:hover {
   display: none;
 }
 
-@media all and (max-width: 1300px) {
+@media all and (max-width: 900px) {
   .nav__list--active {
     display: block;
     position: fixed;
@@ -275,7 +276,7 @@ button:hover {
   }
 }
 
-@media all and (min-width: 1300px) {
+@media all and (min-width: 900px) {
   .nav__menu {
     display: none;
   }
