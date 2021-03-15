@@ -21,7 +21,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <aside class="header__aside">
       <h1><a class="link link--header link--name" href="/">jan schill</a></h1>
     </aside>
@@ -37,16 +37,10 @@
           <a class="link link--item link--header" href="/thoughts">thoughts</a>
         </li>
         <li class="nav__list-item">
-          <a class="link link--item link--header" href="/experiments">experiments</a>
+          <a class="link link--item link--header" href="/works">works</a>
         </li>
         <li class="nav__list-item">
           <a class="link link--item link--header" href="/readings">readings</a>
-        </li>
-        <li class="nav__list-item">
-          <a class="link link--item link--header" href="/people">people</a>
-        </li>
-        <li class="nav__list-item">
-          <a class="link link--item link--header" href="/links">links</a>
         </li>
         <li class="nav__list-item nav__list-item--logo">
           <a class="link link--item link--header link--logo" href="https://janschill.net/profile/card#me"><img
@@ -55,8 +49,8 @@
       </ul>
     </nav>
   </header>
-  <main>
-    <section>
+  <main class="main flex-grid">
+    <section class="section">
       <h2>about</h2>
       <article class="text">
         <p>I live in Copenhagen where I study a Master’s in Computer Science at the <a href="https://itu.dk"
@@ -70,35 +64,68 @@
         <p>
           I am currently interested in <a href="https://solidproject.org" rel="noopener noreferrer nofollow"
             target="_blank">Solid</a> and work with <a href="https://home.cern" rel="noopener noreferrer nofollow"
-            target="_blank">CERN</a> on a code investigation to enable a decentralized web
+            target="_blank">CERN</a> on a <a href="https://github.com/janschill/cern-solid-code-investigation"
+            rel="noopener noreferrer nofollow" target="_blank">code investigation</a> to enable a decentralized web
           application development approach.
         </p>
       </article>
       <article class="text">
-        <h2>other places</h2>
+        <h3>other places</h3>
         <ul>
-          <li>
+          <li class="li">
             <a href="https://twitter.com/schill_jan" rel="noopener noreferrer nofollow" target="_blank">Twitter</a>
           </li>
-          <li>
+          <li class="li">
             <a href="https://github.com/janschill" rel="noopener noreferrer nofollow" target="_blank">GitHub</a>
           </li>
-          <li>
+          <li class="li">
             <a href="https://www.linkedin.com/in/jan-schill-161b66a4/" rel="noopener noreferrer nofollow"
               target="_blank">LinkedIn</a>
           </li>
-          <li>
+          <li class="li">
             <a href="mailto:schill@hey.com">Email</a>
           </li>
-          <li>
+          <li class="li">
             <a href="https://janschill.net/profile/card#me" rel="noopener noreferrer nofollow" target="_blank">WebID</a>
+          </li>
+          <li class="li">
+            <a href="https://lichess.org/@/janschill" rel="noopener noreferrer nofollow" target="_blank">lichess.org</a>
           </li>
         </ul>
       </article>
     </section>
+    <section class="section">
+      <h2><a href="/thoughts/">thoughts</a></h2>
+      <article class="text">
+        <p>Thoughts is a place for all those things occupying my mind at the moment I deem worth writing down.</p>
+        <p>At the moment I am writing a post about tracking in the web. Future post will also entail topics such as <a href="https://solidproject.org" rel="noopener noreferrer nofollow" target="_blank">Solid</a>.</p>
+      </article>
+      <article class="text">
+        <h3>posts</h3>
+        <ul>
+          <li class="li">
+            <strike><a href="/thoughts/#tracking">tracking</a></strike> (unfinished)
+          </li>
+        </ul>
+      </article>
+    </section>
+    <section class="section">
+      <h2><a href="/works/">works</a></h2>
+      <article class="text">
+        <p>This part of my website will hold projects I have worked on. These can range from static websites for friends to decentralized web services to everything that had sparked my interest to create something.</p>
+      </article>
+    </section>
+    <section class="section">
+      <h2><a href="/readings/">readings</a></h2>
+      <article class="text">
+        <p>A collection of links to books, articles, quotes, everything written by others.</p>
+      </article>
+    </section>
   </main>
   <footer>
-    reach out <a href="mailto:schill@hey.com">schill@hey.com</a>
+    <div>
+      reach out <a href="mailto:schill@hey.com">schill@hey.com</a>
+    </div>
   </footer>
 </body>
 
