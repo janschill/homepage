@@ -1,0 +1,9 @@
+.section--readings .quotation {
+  font-style: italic;
+  margin-bottom: 1em;
+}
+
+.section--readings .author {
+  text-align: right;
+}
+
