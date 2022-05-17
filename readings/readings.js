@@ -5,7 +5,7 @@
     const fetch = $rdf.fetcher(store);
     const readingsUrl = store.sym('https://janschill.net/public/readings.ttl');
 
-    function artistDom(artist) {
+    function quoteDom(quote) {
       const $section = document.createElement('section')
       $section.classList.add('section')
       $section.classList.add('section--readings')
@@ -35,7 +35,7 @@
         const sts = store.statementsMatching($rdf.sym(quotation.value), null, null, readingsUrl)
         const text = findValue(sts, SCHEM('text'))[0].object.value
         const author = findValue(sts, SCHEM('spokenByCharacter'))[0].object.value
-        artistDom({ text: text, author: author })
+        quoteDom({ text: text, author: author })
       })
     });
   }
