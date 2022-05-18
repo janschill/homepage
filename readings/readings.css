@@ -1,6 +1,7 @@
 .section--readings .quotation {
   font-style: italic;
   margin-bottom: 1em;
+  line-height: 1.7;
 }
 
 .section--readings .author {
