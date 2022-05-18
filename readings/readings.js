@@ -18,7 +18,7 @@
       $article.append($authorDiv)
       $authorDiv.classList.add('author')
 
-      $quotationText.innerText = `“${quote.text}”`
+      $blockquote.innerText = `“${quote.text}”`
       $authorDiv.innerText = quote.spokenByCharacter
 
       document.querySelector('.main').appendChild($section)
@@ -34,8 +34,8 @@
       quotations.forEach(quotation => {
         const sts = store.statementsMatching($rdf.sym(quotation.value), null, null, readingsUrl)
         const text = findValue(sts, SCHEM('text'))[0].object.value
-        const author = findValue(sts, SCHEM('spokenByCharacter'))[0].object.value
-        quoteDom({ text: text, author: author })
+        const spokenByCharacter = findValue(sts, SCHEM('spokenByCharacter'))[0].object.value
+        quoteDom({ text: text, spokenByCharacter: spokenByCharacter })
       })
     });
   }
